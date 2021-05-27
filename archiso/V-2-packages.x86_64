@@ -1,0 +1,880 @@
+#####################################################################
+##                            PACKAGES AVAILABLE
+#####################################################################
+
+###archiso
+amd-ucode
+arch-install-scripts
+
+#Archiving Tool
+ark
+#Minimal package set to define a basic Arch Linux installation
+base
+
+#A complete, highly portable implementation of the DNS protocol
+bind-tools
+#Btrfs filesystem utilities
+btrfs-progs
+
+#Central Regulatory Domain Agent for wireless networks
+crda
+#A small and secure static webserver
+darkhttpd
+
+#GNU data recovery tool
+ddrescue
+#A standalone DHCP client from the dhcp package
+dhclient
+
+
+
+#Device mapper RAID interface
+dmraid
+#DNS forwarder and DHCP server
+dnsmasq
+
+#DOS filesystem utilities for partitioning(fat)
+dosfstools
+#EDK2 UEFI Shell
+edk2-shell
+
+#Linux user-space application to modify the EFI Boot Manager
+efibootmgr
+#Utility for controlling network drivers and hardware
+ethtool
+
+#exFAT filesystem userspace utilities for the Linux Kernel exfat driver
+exfatprogs
+#check a Linux F2FS file system 
+f2fs-tools
+
+#A utility to resize FAT filesystems using libparted
+fatresize
+#Partition table rescue/guessing tool
+gpart
+#A text-mode partitioning tool that works on GUID Partition Table (GPT) disks
+gptfdisk
+
+#Unix utility which reads and writes data across network connections
+gnu-netcat
+#A mouse server for the console and xterm
+gpm
+
+#command line utility to set and view hardware parameters of hard disk drives
+hdparm
+#Microcode update files for Intel CPUs
+intel-ucode
+
+#Intel Centrino Drivers firmware for IPW2100
+ipw2100-fw
+#Firmware for the Intel PRO/Wireless 2200BG
+ipw2200-fw
+
+#iNet wireless daemon
+iwd
+#journaling file system utilities
+jfsutils
+
+#Library functionality for FIDO 2.0, including communication with a device over USB
+libfido2
+#Library to enable user space application programs to communicate with USB devices
+libusb-compat
+
+#The Linux kernel and modules
+linux
+#Drivers and tools to support ATM networking under Linux.
+linux-atm
+#Firmware files for Linux
+linux-firmware
+
+#A tool that lists devices
+lsscsi
+#Logical Volume Manager 2 utilities
+lvm2
+
+#A utility for reading man pages
+man-db
+#Linux man pages
+man-pages
+
+#An advanced memory diagnostic tool
+memtest86+
+
+#Modular initramfs image creation utility
+mkinitcpio
+#Mkinitcpio hooks and scripts for archiso
+mkinitcpio-archiso
+#ipconfig and nfsmount tools for NFS root support in mkinitcpio
+mkinitcpio-nfs-utils
+
+
+#A collection of utilities to access MS-DOS disks
+mtools
+
+#Pico editor clone with enhancements
+nano
+#tools for network block devices, allowing you to use remote block devices over TCP/IP
+nbd
+
+#Collection of IPv6 networking utilities
+ndisc6
+#Support programs for Network File Systems
+nfs-utils
+
+#A log-structured file system supporting continuous snapshotting (userspace utils)
+nilfs-utils
+#Utility for network discovery and security auditing
+nmap
+
+#NTFS filesystem driver and utilities
+ntfs-3g
+#NVM-Express user space tooling for Linux
+nvme-cli
+
+#Premier connectivity tool for remote login with the SSH protocol
+openssh
+#An easy-to-use, robust and highly configurable VPN (Virtual Private Network)
+openvpn
+
+#A program for creating, destroying, resizing, checking and copying partitions
+parted
+#A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
+reflector
+
+#Reiserfs utilities?
+reiserfsprogs
+#An utility similar to hdparm but for SCSI devices
+sdparm
+
+#Generic SCSI utilities
+sg3_utils
+#Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives
+smartmontools
+
+#Sound Open Firmware
+sof-firmware
+#Tools for squashfs, a highly compressed read-only filesystem for Linux
+squashfs-tools
+
+#Give certain users the ability to run some commands as root
+sudo
+#Collection of boot loaders that boot from FAT, ext2/3/4 and btrfs filesystems, from CDs and via PXE
+syslinux
+
+#Powerful command-line packet analyzer
+tcpdump
+#Checks and undeletes partitions + PhotoRec, signature based recovery tool
+testdisk
+
+#Implementation of the TCG Trusted Platform Module 2.0 Software Stack (TSS2)
+tpm2-tss
+#Linux tools for UDF filesystems and DVD/CD-R(W) drives
+udftools
+
+#Activating switchable USB devices on Linux.
+usb_modeswitch
+#USB Multiplex Daemon
+usbmuxd
+#A collection of USB tools to query connected USB devices
+usbutils
+
+#Vi Improved, a highly configurable, improved version of the vi text editor
+vim
+
+#Central Regulatory Domain Database
+wireless-regdb
+#Tools allowing to manipulate the Wireless Extensions
+wireless_tools
+#A utility providing key negotiation for WPA wireless networks
+wpa_supplicant
+
+
+#XFS filesystem utilities
+xfsprogs
+
+
+
+
+
+
+
+################
+### Disabled ###
+################
+
+#Braille display driver for Linux/Unix
+#brltty
+#The standard for customising cloud instances
+#cloud-init
+#RFC2131 compliant DHCP client daemon
+#dhcpcd
+#Utility programs used for creating patch files
+#diffutils
+#Safe and flexible file-system backup and deployment tool
+#fsarchiver
+#grml's zsh setup
+#grml-zsh-config
+#Modular text mode IRC client with Perl scripting
+#irssi
+#A file manager that emulates Norton Commander/Midnight Commander a visual file manager
+#mc
+#A tool for managing/monitoring Linux md device arrays, also known as Software RAID
+#mdadm
+#Open client for Cisco AnyConnect VPN
+#openconnect
+#Utilities to save and restore used blocks on a partition
+#partclone
+#Partition Image saves partitions in many formats to an image file.
+#partimage
+#PC/SC Architecture smartcard middleware library
+#pcsclite
+#A daemon which implements the Point-to-Point Protocol for dial-up networking
+#ppp
+#Client for the proprietary Microsoft Point-to-Point Tunneling Protocol, PPTP
+#pptpclient
+#Roaring Penguin's Point-to-Point Protocol over Ethernet client
+#rp-pppoe
+#for use with systemd-resolved
+#systemd-resolvconf
+#Monospace bitmap font (for X11 and console)
+#terminus-font
+#VPN client for cisco3000 VPN Concentrators
+#vpnc
+#A dialer program;it dials a modem and starts ppp in order to connect to the Internet
+#wvdial
+#an open source implementation of the L2TP maintained by Xelerance Corporation
+#xl2tpd
+
+
+
+
+
+
+
+###archiso-extra
+dialog
+dnsutils
+grub
+haveged
+linux-headers
+logrotate
+ntp
+wget
+
+
+###xorg
+xorg-server
+xorg-apps
+xorg-xinit
+
+
+###video
+#xorg-drivers
+#xorg-drivers includes
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+#xf86-input-synaptics
+xf86-input-vmmouse
+xf86-input-void
+#xf86-video-amdgpu
+#xf86-video-ati
+#xf86-video-dummy
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-qxl
+xf86-video-vesa
+xf86-video-vmware
+#xf86-video-voodoo
+#xf86-video-sisusb
+mesa
+
+
+###hardware video support
+#bumblebee
+optimus-manager
+optimus-manager-qt
+nvidia
+nvidia-utils
+nvidia-settings
+nvidia-dkms
+nvidia-xrun
+libva-intel-driver
+#libva-vdpau-driver
+#mesa-demos
+#mesa-vdpau
+#opencl-mesa
+#primus
+vulkan-intel
+#vulkan-radeon
+
+
+###base and base-devel
+base
+base-devel
+
+
+###virtual box or vmware
+#open-vm-tools
+#virtualbox-guest-modules-arch
+#virtualbox-guest-utils
+
+
+###packages for dual boot
+#Utility to detect other OSes on a set of drives
+os-prober
+
+
+###LUKS encryption
+cryptsetup
+
+
+###audio
+alsa-firmware
+alsa-plugins
+alsa-lib
+alsa-utils
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer
+libdvdcss
+pulseaudio
+pulseaudio-alsa
+pavucontrol
+
+
+###network
+#Service Discovery for Linux using mDNS/DNS-SD 
+avahi
+#glibc plugin providing host name resolution via mDNS
+nss-mdns
+#Network Management daemon
+mobile-broadband-provider-info
+#Mobile broadband modem management service
+modemmanager
+networkmanager
+network-manager-applet
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+#resolv.conf management framework
+openresolv
+
+
+###file management
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+mtpfs
+udiskie
+udisks2
+xdg-user-dirs
+
+
+###tumbler
+tumbler
+ffmpegthumbnailer
+freetype2
+libgsf
+libopenraw
+poppler-glib
+poppler-qt5
+
+
+
+#############
+## Disabled #
+#############
+
+#SMB Fileserver and AD Domain server
+#samba
+
+###printers
+#cups
+#cups-filters
+#cups-pdf
+#cups-pk-helper
+#ghostscript
+#gsfonts
+#gtk3-print-backends
+#gutenprint
+#libcups
+#hplip
+#splix
+#system-config-printer
+
+
+
+
+
+#########################################################################
+#                  SOFTWARE FROM ARCH LINUX REPOSITORIES
+#########################################################################
+
+###applications
+#dmenu
+#Fast and light imlib2-based image viewer
+#feh
+#firefox
+firefox-adblock-plus
+#flashplugin
+galculator
+#gimp
+#Lightweight application launcher 
+gmrun
+#Simple and lightweight GTK calendar
+#gsimplecal
+imagemagick
+#libreoffice-fresh
+#A small tool to provide detailed information on the hardware configuration of the machine.
+lshw
+#Turns on the numlock key in X11.
+numlockx
+#Music player- V2 - removed
+#pragha
+#qbittorrent
+#Changes the wallpaper on a regular interval using user-specified or automatically downloaded images.
+#variety
+vlc
+
+###conky
+jq
+lm_sensors
+
+###cursors
+xcursor-simpleandsoft
+
+###fonts
+adobe-source-code-pro-fonts
+adobe-source-sans-pro-fonts
+#awesome-terminal-fonts
+#noto-fonts
+#ttf-bitstream-vera
+ttf-dejavu
+#ttf-droid
+ttf-fira-mono
+ttf-hack
+ttf-inconsolata
+ttf-lato
+#ttf-liberation
+#ttf-roboto
+#ttf-roboto-mono
+ttf-ubuntu-font-family
+
+###icons
+arc-icon-theme
+#gnome-icon-theme
+#papirus-icon-theme
+
+###themes
+#adapta-gtk-theme
+arc-gtk-theme
+#kvantum-qt5
+#openbox-arc-git
+
+###utilities
+#arandr
+autorandr
+bash-completion
+catfish
+dconf-editor
+#Program to generate and execute DesktopEntry files of type Application
+#dex
+#Desktop Management Interface table related utilities
+#dmidecode
+#Disk Usage/Free Utility
+duf-bin
+#EDID decoder and conformance tester
+edid-decode-git
+#Document viewer
+#evince
+#pacman database extraction utility
+expac
+#Create and modify archives
+file-roller
+git
+#A graphical frontend for su
+gksu
+gparted
+#System monitoring dashboard for terminal
+#gtop
+hardinfo
+hddtemp
+#Interactive process viewer
+htop
+#Tool to check operability of hardware devices
+hw-probe
+#hyphen
+#hyphen-en
+intltool
+iw
+jsoncpp
+libmtp
+laptop-detect
+lsb-release
+mlocate
+#nomacs
+oh-my-zsh-git
+p7zip
+#plank
+playerctl
+polkit
+#polkit-gnome
+#python2-dbus
+python2-xdg
+#qt4
+#qt5ct
+#qt5-styleplugins
+#qt5-tools
+#qt5-webkit
+#powertop
+#redshift
+ripgrep
+rofi
+#simple-scan
+speedtest-cli-git
+timeshift
+#Linux Advanced Power Management
+tlp
+tree
+ufw
+#gufw
+unace
+unrar
+unzip
+#A console-based network traffic monitor
+#vnstat
+webkit2gtk
+wmctrl
+xapp
+xdo
+xdotool
+#xdg-desktop-portal-gtk
+youtube-dl
+#Display graphical dialog boxes from shell scripts
+zenity
+zsh
+zsh-completions
+zsh-syntax-highlighting
+
+###########################################################################
+#                           ARCOLINUX_REPOS
+###########################################################################
+
+###cursors
+#breeze-cursors-lh
+#breeze-obsidian-cursor-theme
+#oxy-neon
+breeze
+#xcursor-vanilla-dmz-aa
+
+###fonts
+ttf-font-awesome
+ttf-ms-fonts
+
+###icons
+surfn-arc-breeze-icons-git
+#faba-icon-theme-git
+#halo-icons-git
+#moka-icon-theme-git
+#numix-circle-arc-icons-git
+#numix-icon-theme-git
+#numix-circle-icon-theme-git
+#paper-icon-theme
+#sardi-icons
+#surfn-icons-git
+#zafiro-icon-theme
+
+###tools
+mkinitcpio-openswap
+
+###utilities-repo
+appstream
+archiso
+conky-lua-archers
+downgrade
+#font-manager-git
+#glxinfo
+#gitahead-bin
+grub-customizer
+hardcode-fixer-git
+inxi
+mintstick-git
+neofetch
+#numix-gtk-theme-git
+pamac-all
+#pamac-aur
+#paru-bin
+#peek
+#pulseaudio-equalizer-ladspa
+#pyakm
+python-pyparted
+#python-pywal
+#scour
+#screenkey-git
+#the_platinum_searcher-bin
+#display graphical dialogs from shell scripts or command line
+#V2 - removed
+#yad
+yay-bin
+
+###########################################################################
+#                               GAMES
+###########################################################################
+
+lutris
+
+###########################################################################
+#                           ARCOLINUX FOLDER
+###########################################################################
+
+arcolinux-arc-kde
+arcolinux-bin-git
+arcolinux-conky-collection-plasma-git
+arcolinux-fonts-git
+arcolinux-grub-theme-vimix-git
+arcolinux-gtk3-surfn-arc-breeze-git
+arcolinux-hblock-git
+arcolinux-keyring
+arcolinux-mirrorlist-git
+arcolinux-neofetch-git
+arcolinux-plasma-kservices-git
+#arcolinux-qt5-plasma-git
+arcolinux-root-git
+arcolinux-system-config-git
+arcolinux-systemd-services-git
+arcolinux-tweak-tool-git
+arcolinux-wallpapers-git
+arcolinux-zsh-git
+
+
+###Disabled
+#arcolinux-arc-themes-git
+#arcolinux-common-git
+#arcolinux-conky-collection-git
+#arcolinux-cron-git
+#arcolinux-docs-git
+#arcolinux-faces-git
+#arcolinux-geany-git
+#arcolinux-gtk3-sardi-arc-git
+#arcolinux-gtk3-surfn-arc-git
+#arcolinux-guake-autostart-git
+#arcolinux-kvantum-git
+#arcolinux-kvantum-lxqt-git
+#arcolinux-kvantum-plasma-git
+#arcolinux-kvantum-theme-arc-git
+#arcolinux-local-applications-git
+#arcolinux-local-applications-plasma-hide-git
+#arcolinux-local-xfce4-git
+#arcolinux-logo-git
+#arcolinux-logout-git
+#arcolinux-logout-themes-git
+#arcolinux-lxqt-applications-add-git
+#arcolinux-lxqt-applications-hide-git
+#arcolinux-meta-logout
+#arcolinux-nitrogen-git
+#arcolinux-oblogout
+#arcolinux-oblogout-themes-git
+#arcolinux-obmenu-generator-git
+#arcolinux-obmenu-generator-minimal-git
+#arcolinux-obmenu-generator-xtended-git
+#arcolinux-openbox-themes-git
+#arcolinux-paru-git
+#arcolinux-pipemenus-git
+#arcolinux-plank-git
+#arcolinux-plank-themes-git
+#arcolinux-polybar-git
+#arcolinux-qt5-git
+#arcolinux-rofi-git
+#arcolinux-rofi-themes-git
+#arcolinux-slim
+#arcolinux-slimlock-themes-git
+#arcolinuxd-system-config-git
+#arcolinux-termite-themes-git
+#arcolinux-tint2-git
+#arcolinux-tint2-themes-git
+#arcolinux-variety-git
+#arcolinux-variety-autostart-git
+#arcolinux-volumeicon-git
+#arcolinux-wallpapers-lxqt-dual-git
+#arcolinux-xfce-panel-profiles-git
+#arcolinux-xmobar-git
+
+###########################################################################
+#                           ARCOLINUX DESKTOP FOLDER
+###########################################################################
+
+
+arcolinux-plasma-git
+
+
+###########################################################################
+#                           ARCOLINUX CONFIG FOLDER
+###########################################################################
+
+
+arcolinux-config-plasma-git
+
+
+###########################################################################
+#                           ARCOLINUX DCONF FOLDER
+###########################################################################
+
+
+arcolinux-plasma-dconf-git
+
+
+###########################################################################
+#                                ARCOLINUX CALAMARES
+###########################################################################
+
+arco-calamares
+#arco-calamares-comp
+#arco-calamares-dev
+#arco-calamares-git
+#arco-calamares-next
+arcolinux-system-installation-git
+#arcolinuxd-config-live-session-git
+arcolinux-welcome-app-git
+#arcolinux-welcome-app-dev-git
+arcolinux-calamares-tool-git
+#arcolinux-calamares-tool-dev-git
+
+###########################################################################
+#                                CALAMARES DEPENDENCIES
+###########################################################################
+
+ckbcomp
+upower
+kcoreaddons
+kconfig
+ki18n
+kservice
+kwidgetsaddons
+kpmcore
+#arcolinux-kpmcore
+boost-libs
+libpwquality
+squashfs-tools
+plasma-framework
+hwinfo
+#qt5-xmlpatterns
+adobe-source-han-sans-jp-fonts
+adobe-source-han-sans-kr-fonts
+adobe-source-han-sans-cn-fonts
+
+###########################################################################
+#                                ARCOLINUX CONFIG CALAMARES
+###########################################################################
+
+
+arcob-calamares-config-plasma-git
+
+
+###########################################################################
+#                                DISPLAY MANAGERS
+###########################################################################
+
+accountsservice
+
+
+##sddm
+#QML based X11 and Wayland display manager
+sddm
+arcolinux-sddm-sugar-candy-git
+#sddm-config-editor-git
+
+###########################################################################
+#                         PICOM OR COMPTON
+###########################################################################
+
+#picom
+
+###########################################################################
+#                         GENERAL DESKTOP RELATED
+###########################################################################
+
+#mugshot
+#menulibre
+#volumeicon
+
+###########################################################################
+#                         ARCOLINUX ISO SPECIFIC
+###########################################################################
+
+
+thunar
+thunar-volman
+thunar-archive-plugin
+thunar-media-tags-plugin
+#D-Bus service for applications to request thumbnails
+tumbler
+xfburn
+xfce4-screenshooter
+
+
+###########################################################################
+#                                ISO SPECIFIC
+###########################################################################
+
+atom
+bash-language-server
+celluloid
+clamav
+cowsay
+#kdeconnect
+kde-gtk-config
+ffmpegthumbs
+gwenview
+kate
+konsole
+lolcat
+nodejs
+#Find where is space taken on HDD
+ncdu
+npm
+ocs-url
+#Document Viewer
+okular
+#packagekit-qt5
+partitionmanager
+plasma-meta
+ristretto
+#GNOME application for managing PGP keys.
+seahorse
+sddm-kcm
+#Screenshooter
+spectacle
+systemd-kcm
+
+# Groups
+# https://www.archlinux.org/groups/
+
+#kde-applications-meta
+#kdeaccessibility-meta
+kde-system-meta
+#cryfs
+#Encrypted filesystem in user-space
+#encfs
+#gocryptfs
+#kdenetwork-filesharing
+#kdebindings
+#kdeedu-meta
+#kdegames-meta
+#kdegraphics-meta
+#kdemultimedia-meta
+#kdenetwork-meta
+#kdepim-meta
+#kdesdk-meta
+#kdeutils-meta
+#kdewebdev-meta
+#kde-development-environment-meta
