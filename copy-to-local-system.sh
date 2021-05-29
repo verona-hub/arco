@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e
 
 #----------------------------------------------------------------------------------
 
@@ -10,6 +10,7 @@ echo "****************************************************************"
 echo "Copying Conky and Neofetch ./config files from the downloaded repository to the local system..."
 echo "****************************************************************"
 tput sgr0
+mkdir -p ~/backup-before-import/
 cp -Rf ~/.config ~/backup-before-import/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
 cp -arf $PWD/.config/. ~/.config
 echo $'\n'
@@ -32,7 +33,7 @@ echo "****************************************************************"
 echo "Copying oh-my-zsh files from the downloaded repository to the local system..."
 echo "****************************************************************"
 tput sgr0
-cp -Rf ~/.oh-my-zsh/custom/plugins ~/backup-before-import/.oh-my-zsh-custom-plugins-backup-$(date +%Y.%m.%d-%H.%M.%S)
+sudo cp -Rf ~/.oh-my-zsh/custom/plugins ~/backup-before-import/.oh-my-zsh-custom-plugins-backup-$(date +%Y.%m.%d-%H.%M.%S)
 cp -arf $PWD/.oh-my-zsh/. ~/.oh-my-zsh
 echo $'\n'
 
@@ -43,8 +44,8 @@ echo "****************************************************************"
 echo "Copying neofetch ASCII logos files from the downloaded repository to the local system..."
 echo "****************************************************************"
 tput sgr0
-sudo cp -af /usr/bin/neofetch.sh ~/backup-before-import/neofetch-backup-$(date +%Y.%m.%d-%H.%M.%S)
-sudo cp -arf $PWD/usr/bin/. /usr/bin
+sudo cp -arf /usr/bin/. ~/backup-before-import/neofetch-backup-$(date +%Y.%m.%d-%H.%M.%S)
+sudo cp -arf $PWD/usr/. ~/usr/
 echo $'\n'
 
 
