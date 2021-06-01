@@ -52,6 +52,17 @@ echo $'\n'
 echo $'\n'
 tput setaf 4
 echo "****************************************************************"
+echo "Copying .bashrc file from the downloaded repository to the local system..."
+echo "****************************************************************"
+tput sgr0
+cp -af ~/.bashrc ~/backup-before-import/.bashrc-$(date +%Y.%m.%d-%H.%M.%S)
+cp -arf $PWD/bash/. ~
+echo $'\n'
+
+
+echo $'\n'
+tput setaf 4
+echo "****************************************************************"
 echo "Copying .zshrc file from the downloaded repository to the local system..."
 echo "****************************************************************"
 tput sgr0
