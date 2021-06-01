@@ -33,7 +33,7 @@ echo "****************************************************************"
 echo "Copying oh-my-zsh files from the downloaded repository to the local system..."
 echo "****************************************************************"
 tput sgr0
-sudo cp -Rf ~/.oh-my-zsh/custom/plugins ~/backup-before-import/.oh-my-zsh-custom-plugins-backup-$(date +%Y.%m.%d-%H.%M.%S)
+sudo cp -Rf ~/.oh-my-zsh ~/backup-before-import/.oh-my-zsh-backup-$(date +%Y.%m.%d-%H.%M.%S)
 cp -arf $PWD/.oh-my-zsh/. ~/.oh-my-zsh
 echo $'\n'
 
