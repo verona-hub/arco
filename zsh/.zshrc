@@ -112,7 +112,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # export MANPATH="/usr/local/man:$MANPATH"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
+export git="/home/admin/Documents/Documents/GitHub/arco"
 
 
 ##################
@@ -129,7 +129,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 if [ -n "$DISPLAY" ]; then
     export EDITOR=atom
 else
-    export EDITOR=webstorm
+    export EDITOR=nano
 fi
 
 
