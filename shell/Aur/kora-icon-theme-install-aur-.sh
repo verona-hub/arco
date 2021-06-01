@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-## Install oh-my-zsh from AUR
-package="oh-my-zsh-git"
+## Install Kora Icon Theme from AUR
+package="kora-icon-theme-git"
 
 #----------------------------------------------------------------------------------
 
@@ -24,7 +24,7 @@ else
 
 		tput setaf 3
 		echo $'\n'
-		echo "Mooo!!! I will install oh-my-zsh with Yay... Give me a sec..." | cowsay -n | lolcat
+		echo "Mooo!!! I will install Kora Icon Theme with Yay... Give me a sec..." | cowsay -n | lolcat
 		echo $'\n'
 		echo "**************************************************************"
 		echo "**************************************************************"

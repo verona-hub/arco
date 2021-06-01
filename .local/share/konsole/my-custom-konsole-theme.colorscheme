@@ -103,6 +103,6 @@ RandomSaturationRange=100
 [General]
 Blur=true
 ColorRandomization=false
-Description=Cheerful-Phantasy
+Description=my-custom-konsole-theme
 Opacity=0.93
 Wallpaper=
