@@ -22,7 +22,7 @@ ZSH= sh install.sh
 press **Yes** to make it default
 
 Make zsh your default shell:
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 
 You'll need to log out, then log back in for the changes to take effect
 
