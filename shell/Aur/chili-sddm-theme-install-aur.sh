@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-## Install xxx from AUR
-package="xxx"
+## Install Chili-sddm theme from AUR
+package="chili-sddm-theme"
 
 #----------------------------------------------------------------------------------
 
@@ -24,10 +24,10 @@ else
 
 		tput setaf 3
 		echo $'\n'
-		echo "Mooo!!! I will install xxx with Yay... Give me a sec..." | cowsay -n | lolcat
+		echo "Mooo!!! I will install Chili-sddm theme with Yay... Give me a sec..." | cowsay -n | lolcat
 		echo $'\n'
-		echo "**************************************************************"
-		echo "**************************************************************"
+		echo "*********************************************************************"
+		echo "*********************************************************************"
 		echo $'\n'
 		tput sgr0
 

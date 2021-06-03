@@ -31,7 +31,7 @@ else
 		echo $'\n'
 		tput sgr0
 
-		sudo yay -S --noconfirm $package
+	  yay -S --noconfirm $package
 
 	fi
 
