@@ -32,3 +32,9 @@ oh_my_zsh
 if error on startup:
 add this to .zshrc file
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+if [ERROR]: git status failed to initialize
+add this to .zshrc file
+POWERLEVEL9K_DISABLE_GITSTATUS=true at the bottom of ~/.zshrc.
+or run terminal:
+echo 'POWERLEVEL9K_DISABLE_GITSTATUS=true' >>! ~/.zshrc
