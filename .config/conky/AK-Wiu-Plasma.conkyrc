@@ -1,3 +1,4 @@
+-- Custom
 conky.config = {
 --Credits : Andy Kefi from Facebook
 	use_xft = true,

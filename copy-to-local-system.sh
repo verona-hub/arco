@@ -12,28 +12,30 @@ ohmyzsh_powerlevel10k="$backupFolder/oh-my-zsh/bin-themes/zsh-theme-powerlevel10
 neofetch="$backupFolder/neofetch"
 bash="$backupFolder/bash"
 zsh="$backupFolder/zsh"
+thunar="$backupFolder/thunar"
+kwinrc="$backupFolder/kwinrc"
+plasma="$backupFolder/plasma"
 
 echo $'\n'
 tput setaf 4
-echo "****************************************************************"
-echo "Copying Conky, Neofetch, Gtk-3.0, Gtk-4.0, Thunar, and Plasma"
-echo "files from the downloaded repository to the local system..."
-echo "****************************************************************"
+echo "*******************************************************************"
+echo "Copying files from the downloaded repository to the local system..."
+echo "*******************************************************************"
 tput sgr0
 
-echo "Creating a backup folder inside root"
+echo "1) Creating a backup folder inside root"
 mkdir -p ~/$backupFolder
 echo
 
-echo "Creating Conky folder inside the backup folder"
+echo "2) Creating Conky folder inside the backup folder"
 mkdir -p ~/$conky
 echo
 
-echo "Making a backup of the original file"
+echo "3) Making a backup of the original file"
 cp -Rf ~/.config/conky/AK-Wiu-Plasma.conkyrc ~/$conky
 echo
 
-echo "Copying the new file to the local system"
+echo "4) Copying the new file to the local system"
 cp -arf $PWD/.config/conky/. ~/.config/conky
 echo
 echo $'\n'
@@ -46,15 +48,15 @@ echo "Copying Konsole theme settings files from the downloaded repository to the
 echo "******************************************************************************************"
 tput sgr0
 
-echo "Creating Konsole folder inside the backup folder"
+echo "5) Creating Konsole folder inside the backup folder"
 mkdir -p ~/$konsole
 echo
 
-echo "Making a backup of the original file"
+echo "6) Making a backup of the original file"
 cp -Rf ~/.local/share/konsole/. ~/$konsole
 echo
 
-echo "Copying the new file to the local system"
+echo "7) Copying the new file to the local system"
 cp -arf $PWD/.local/share/konsole/. ~/.local/share/konsole/
 echo
 echo $'\n'
@@ -67,61 +69,76 @@ echo "Copying oh-my-zsh files and Powerlevel10k theme from the downloaded reposi
 echo "****************************************************************"
 tput sgr0
 
-echo "Creating oh-my-zsh plugins folder inside the backup folder"
+echo "8) Creating oh-my-zsh plugins folder inside the backup folder"
 mkdir -p ~/$ohmyzsh_plugins
 echo
 
-echo "Making a backup of the original file"
-sudo cp -Rf ~/.oh-my-zsh/custom/plugins/. ~/$ohmyzsh_plugins
+echo "9) Making a backup of the original file"
+cp -Rf ~/.oh-my-zsh/custom/plugins/. ~/$ohmyzsh_plugins
 echo
 
-echo "Copying the new file to the local system"
+echo "10) Copying the new file to the local system"
 cp -arf $PWD/.oh-my-zsh/custom/plugins/. ~/.oh-my-zsh/custom/plugins
 echo
 
-echo "Creating oh-my-zsh themes folder inside the backup folder"
+
+
+echo "11) Creating oh-my-zsh themes folder inside the backup folder"
 mkdir -p ~/$ohmyzsh_themes
 echo
 
-echo "Making a backup of the original file"
-sudo cp -Rf ~/.oh-my-zsh/themes/. ~/$ohmyzsh_themes
+echo "12) Making a backup of the original file"
+cp -Rf ~/.oh-my-zsh/themes/. ~/$ohmyzsh_themes
 echo
 
-echo "Copying the new file to the local system"
+echo "13) Copying the new file to the local system"
 cp -arf $PWD/.oh-my-zsh/themes/. ~/.oh-my-zsh/themes
 echo
 
-echo "Creating oh-my-zsh bin-themes folder inside the backup folder"
+
+
+echo "14) Creating oh-my-zsh bin-themes folder inside the backup folder"
 mkdir -p ~/$ohmyzsh_powerlevel10k
 echo
 
-echo "Making a backup of the original file"
+echo "15) Making a backup of the original file"
 sudo cp -arf /usr/share/zsh-theme-powerlevel10k/. ~/$ohmyzsh_powerlevel10k
 echo
 
-echo "Copying the new file to the local system"
-sudo cp -arf $PWD/usr/share/. ~/usr/share
+echo "16) Copying the new file to the local system"
+sudo cp -arf $PWD/usr/share/. /usr/share
 echo
 echo $'\n'
 
 
 echo $'\n'
 tput setaf 4
-echo "****************************************************************"
-echo "Copying neofetch ASCII logos files from the downloaded repository to the local system..."
-echo "****************************************************************"
+echo "********************************************************************"
+echo "Copying neofetch settings and  ASCII logos files from the downloaded
+echo  repository to the local system..."
+echo "********************************************************************"
 tput sgr0
 
-echo "Creating Neofetch folder inside the backup folder"
+echo "17) Creating Neofetch folder inside the backup folder"
 mkdir -p ~/$neofetch
 echo
 
-echo "Making a backup of the original file"
+echo "18) Making a backup of the original neofetch.sh file"
 sudo cp -arf /usr/bin/neofetch ~/$neofetch
 echo
 
-echo "Copying the new file to the local system"
-sudo cp -arf $PWD/usr/bin/neofetch ~/usr/bin/
+echo "19) Copying the new file to the local system"
+sudo cp -arf $PWD/usr/bin/neofetch /usr/bin/
+echo
+echo $'\n'
+
+
+echo "20) Making a backup of the original .config file"
+cp -arf ~/.config/neofetch/. ~/$neofetch
+echo
+
+echo "21) Copying the new .config file to the local system"
+cp -arf $PWD/.config/neofetch/. ~/.config/neofetch
 echo
 echo $'\n'
 
@@ -133,15 +150,15 @@ echo "Copying .bashrc file from the downloaded repository to the local system...
 echo "****************************************************************"
 tput sgr0
 
-echo "Creating Bash folder inside the backup folder"
+echo "22) Creating Bash folder inside the backup folder"
 mkdir -p ~/$bash
 echo
 
-echo "Making a backup of the original file"
+echo "23) Making a backup of the original file"
 cp -Rf ~/.bashrc ~/$bash
 echo
 
-echo "Copying the new file to the local system"
+echo "24) Copying the new file to the local system"
 cp -arf $PWD/bash/. ~
 echo
 echo $'\n'
@@ -154,18 +171,71 @@ echo "Copying .zshrc file from the downloaded repository to the local system..."
 echo "****************************************************************"
 tput sgr0
 
-echo "Creating zsh folder inside the backup folder"
+echo "25) Creating zsh folder inside the backup folder"
 mkdir -p ~/$zsh
 echo
 
-echo "Making a backup of the original file"
+echo "26) Making a backup of the original file"
 cp -Rf ~/.zshrc ~/$zsh
 echo
 
-echo "Copying the new file to the local system"
+echo "27) Copying the new file to the local system"
 cp -arf $PWD/zsh/. ~
 echo
 echo $'\n'
+
+
+echo $'\n'
+tput setaf 4
+echo "*************************************************************************"
+echo "Copying Thunar file from the downloaded repository to the local system..."
+echo "*************************************************************************"
+tput sgr0
+
+echo "28) Creating Thunar folder inside the backup folder"
+mkdir -p ~/$thunar
+echo
+
+echo "29) Making a backup of the original file"
+cp -Rf ~/.config/Thunar/. ~/$thunar
+echo
+
+echo "30) Copying the new file to the local system"
+cp -arf $PWD/.config/Thunar/. ~/.config/Thunar
+echo
+echo $'\n'
+
+
+
+echo $'\n'
+tput setaf 4
+echo "*********************************************************************************************"
+echo "Copying kwinrc and plasma setting files from the downloaded repository to the local system..."
+echo "*********************************************************************************************"
+tput sgr0
+
+echo "31) Creating kwinrc and plasma folders inside the backup folder"
+mkdir -p ~/$kwinrc
+mkdir -p ~/$plasma
+echo
+
+echo "32) Making a backup of the original files"
+cp -Rf ~/.config/kwinrc ~/$kwinrc
+cp -Rf ~/.config/plasma-org.kde.plasma.desktop-appletsrc ~/$plasma
+cp -Rf ~/.config/powermanagementprofilesrc ~/$plasma
+echo
+
+echo "33) Copying the new files to the local system"
+cp -arf $PWD/.config/kwinrc ~/.config
+cp -arf $PWD/.config/plasma-org.kde.plasma.desktop-appletsrc ~/.config
+cp -arf $PWD/.config/powermanagementprofilesrc ~/.config
+echo
+echo $'\n'
+
+
+
+#----------------------------------------------------------------------------------
+
 
 tput setaf 5
 echo $'\n'

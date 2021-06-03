@@ -1,3 +1,4 @@
+# Custom
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=true

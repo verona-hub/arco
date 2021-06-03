@@ -1,4 +1,5 @@
 [AC]
+# Custom
 icon=battery-charging
 
 [AC][DPMSControl]
