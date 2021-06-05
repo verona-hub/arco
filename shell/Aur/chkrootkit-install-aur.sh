@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
 
-## Install ttf-lato
-package="ttf-lato"
+## Install Chkrootkit from AUR
+package="chkrootkit"
 
 #----------------------------------------------------------------------------------
 
-#checking if xxx is already installed or else install
-if pacman -Qi $package &> /dev/null; then
+#checking if application is already installed or else install with aur
+if yay -Qi $package &> /dev/null; then
 
 		tput setaf 2
 		echo $'\n'
@@ -19,22 +19,27 @@ if pacman -Qi $package &> /dev/null; then
 
 else
 
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
 		tput setaf 3
 		echo $'\n'
-		echo "Mooo!!! I will install ttf-lato... Give me a sec..." | cowsay -n | lolcat
+		echo "Mooo!!! I will install chkrootkit with Yay... Give me a sec..." | cowsay -n | lolcat
 		echo $'\n'
-		echo "**************************************************************"
-		echo "**************************************************************"
+		echo "***************************************************************"
+		echo "***************************************************************"
 		echo $'\n'
 		tput sgr0
 
-		sudo pacman -S --noconfirm $package
+	  yay -S --noconfirm $package
+
+	fi
 
 fi
 
 
 # Just checking if installation was successful
-if pacman -Qi $package &> /dev/null; then
+if yay -Qi $package &> /dev/null; then
 
 	tput setaf 2
 	echo $'\n'
