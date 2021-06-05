@@ -33,7 +33,7 @@ else
 fi
 
 
-# Just checking if installation was successful
+# Checking if installation was successful
 if pacman -Qi $package &> /dev/null; then
 
 	tput setaf 2
