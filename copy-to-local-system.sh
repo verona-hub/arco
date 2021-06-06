@@ -12,15 +12,18 @@ ohmyzsh_powerlevel10k="$backupFolder/oh-my-zsh/bin-themes/zsh-theme-powerlevel10
 neofetch="$backupFolder/neofetch"
 bash="$backupFolder/bash"
 zsh="$backupFolder/zsh"
-thunar="$backupFolder/thunar"
+thunar="$backupFolder/Thunar"
 kwinrc="$backupFolder/kwinrc"
 plasma="$backupFolder/plasma"
+gtk3="$backupFolder/gtk-3.0"
+gtk4="$backupFolder/gtk-4.0"
+
 
 echo $'\n'
 tput setaf 4
-echo "*******************************************************************"
-echo "Copying files from the downloaded repository to the local system..."
-echo "*******************************************************************"
+echo "*******************************************"
+echo "  Copying Conky files to the local system  "
+echo "*******************************************"
 tput sgr0
 
 echo "1) Creating a backup folder inside root"
@@ -41,11 +44,11 @@ echo
 echo $'\n'
 
 
-echo $'\n'
+
 tput setaf 4
-echo "******************************************************************************************"
-echo "Copying Konsole theme settings files from the downloaded repository to the local system..."
-echo "******************************************************************************************"
+echo "***************************************************"
+echo "  Copying Konsole theme files to the local system  "
+echo "***************************************************"
 tput sgr0
 
 echo "5) Creating Konsole folder inside the backup folder"
@@ -62,11 +65,11 @@ echo
 echo $'\n'
 
 
-echo $'\n'
+
 tput setaf 4
-echo "****************************************************************"
-echo "Copying oh-my-zsh files and Powerlevel10k theme from the downloaded repository to the local system..."
-echo "****************************************************************"
+echo "***********************************************************************"
+echo "  Copying oh-my-zsh files and Powerlevel10k theme to the local system  "
+echo "***********************************************************************"
 tput sgr0
 
 echo "8) Creating oh-my-zsh plugins folder inside the backup folder"
@@ -111,12 +114,11 @@ echo
 echo $'\n'
 
 
-echo $'\n'
+
 tput setaf 4
-echo "********************************************************************"
-echo "Copying neofetch settings and  ASCII logos files from the downloaded
-echo  repository to the local system..."
-echo "********************************************************************"
+echo "*****************************************************************"
+echo "  Copying neofetch settings and ASCII logos to the local system  "
+echo "*****************************************************************"
 tput sgr0
 
 echo "17) Creating Neofetch folder inside the backup folder"
@@ -143,11 +145,11 @@ echo
 echo $'\n'
 
 
-echo $'\n'
+
 tput setaf 4
-echo "****************************************************************"
-echo "Copying .bashrc file from the downloaded repository to the local system..."
-echo "****************************************************************"
+echo "********************************************"
+echo "  Copying .bashrc file to the local system  "
+echo "********************************************"
 tput sgr0
 
 echo "22) Creating Bash folder inside the backup folder"
@@ -164,11 +166,11 @@ echo
 echo $'\n'
 
 
-echo $'\n'
+
 tput setaf 4
-echo "****************************************************************"
-echo "Copying .zshrc file from the downloaded repository to the local system..."
-echo "****************************************************************"
+echo "*******************************************"
+echo "  Copying .zshrc file to the local system  "
+echo "*******************************************"
 tput sgr0
 
 echo "25) Creating zsh folder inside the backup folder"
@@ -185,11 +187,11 @@ echo
 echo $'\n'
 
 
-echo $'\n'
+
 tput setaf 4
-echo "*************************************************************************"
-echo "Copying Thunar file from the downloaded repository to the local system..."
-echo "*************************************************************************"
+echo "*******************************************"
+echo "  Copying Thunar file to the local system  "
+echo "*******************************************"
 tput sgr0
 
 echo "28) Creating Thunar folder inside the backup folder"
@@ -207,11 +209,10 @@ echo $'\n'
 
 
 
-echo $'\n'
 tput setaf 4
-echo "*********************************************************************************************"
-echo "Copying kwinrc and plasma setting files from the downloaded repository to the local system..."
-echo "*********************************************************************************************"
+echo "*********************************************************"
+echo "  Copying kwinrc and Plasma setting to the local system  "
+echo "*********************************************************"
 tput sgr0
 
 echo "31) Creating kwinrc and plasma folders inside the backup folder"
@@ -234,16 +235,38 @@ echo $'\n'
 
 
 
+tput setaf 4
+echo "****************************************"
+echo "  Copying gtk-3.0 and gtk-4.0 settings  "
+echo "****************************************"
+tput sgr0
+
+echo "31) Creating gtk-3.0 and gtk-4.0 folders inside the backup folder"
+mkdir -p ~/$gtk3
+mkdir -p ~/$gtk4
+echo
+
+echo "32) Making a backup of the original files"
+cp -Rf ~/.config/gtk-3.0/. ~/$gtk3
+cp -Rf ~/.config/gtk-4.0/. ~/$gtk4
+echo
+
+echo "33) Copying the new files to the local system"
+cp -arf $PWD/.config/gtk-3.0/. ~/.config/gtk-3.0
+cp -arf $PWD/.config/gtk-4.0/. ~/.config/gtk-4.0
+echo $'\n'
+
+
+
 #----------------------------------------------------------------------------------
 
 
 tput setaf 5
-echo $'\n'
-echo "*************************************************"
-echo " --- --- ---       Finished!       --- --- --- --"
-echo "*************************************************"
-echo " Backup has been made and files have been moved! "
-echo "*************************************************"
+echo "**************************************************"
+echo "  --- --- ---        Finished!         --- --- ---"
+echo "**************************************************"
+echo "  Backup has been made and files have been moved! "
+echo "**************************************************"
 tput sgr0
 echo $'\n'
 
