@@ -36,7 +36,7 @@ fi
 # Checking if installation was successful
 if pacman -Qi $package &> /dev/null; then
 
-	tput setaf 2
+	tput setaf 5
 	echo $'\n'
 	echo ""$package" has been successfully installed!" | cowsay -n | lolcat
 	echo "***********************************************"
