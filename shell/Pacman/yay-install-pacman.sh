@@ -13,8 +13,8 @@ if pacman -Qi $package &> /dev/null && pacman -Qi $package2 &> /dev/null; then
 		tput setaf 2
 		echo $'\n'
 		echo ""$package" and "$package2" are already installed" | cowsay -n | lolcat
-		echo "***********************************"
-		echo "***********************************"
+		echo "*************************************************"
+		echo "*************************************************"
 		echo $'\n'
 		tput sgr0
 
@@ -24,8 +24,8 @@ else
 		echo $'\n'
 		echo "Mooo!!! I will install $package and $package2... Give me a sec..." | cowsay -n | lolcat
 		echo $'\n'
-		echo "**************************************************************"
-		echo "**************************************************************"
+		echo "******************************************************************"
+		echo "******************************************************************"
 		echo $'\n'
 		tput sgr0
 
@@ -40,15 +40,15 @@ if pacman -Qi $package &> /dev/null; then
 	tput setaf 2
 	echo $'\n'
 	echo ""$package" and "$package2" have been successfully installed!" | cowsay -n | lolcat
-	echo "***********************************************"
-	echo "***********************************************"
+	echo "**************************************************************"
+	echo "**************************************************************"
 	tput sgr0
 
 else
 
 	tput setaf 1
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	echo "!!!!!!!!!  "$package" has NOT been installed!" | cowsay -n | lolcat
+	echo "!!!!!!!!!"$package" and "$package2" have NOT been installed!" | cowsay -n | lolcat
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 	tput sgr0
 
