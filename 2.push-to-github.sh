@@ -25,7 +25,7 @@ echo "************************************"
 tput sgr0
 
 read input
-
+echo $'\n'
 # Committing to the local repository with a message
 git commit -m "$input"
 
