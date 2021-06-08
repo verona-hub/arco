@@ -10,7 +10,7 @@ echo "Cleaning the trash folder inside .local/" | cowsay | lolcat
 echo "********************************************"
 echo "********************************************"
 tput sgr0
-sudo sudo rm -rv ~/.local/share/Trash/expunged/*
+sudo rm -rv ~/.local/share/Trash/expunged/*
 
 
 ## Install bleachbit from AUR
