@@ -1,3 +1,4 @@
+# Custom
 [Desktop Entry]
 Type=Service
 ServiceTypes=KonqPopupMenu/Plugin
@@ -23,4 +24,4 @@ Name[pl]=Ustaw jako tło pulpitu
 Name[pt]=Definir como fundo de ambiente de trabalho
 Name[ru]=Сделать фоновым изображением рабочего стола
 Name[ua]=Установити як фон робочого стола
-Exec=qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();print (allDesktops);for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.wallpaperPlugin = "org.kde.image";d.currentConfigGroup = Array("Wallpaper", "org.kde.image", "General");d.writeConfig("Image", "file:///home/admin/Pictures/Space.jpg")}';
+Exec=qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();print (allDesktops);for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.wallpaperPlugin = "org.kde.image";d.currentConfigGroup = Array("Wallpaper", "org.kde.image", "General");d.writeConfig("Image", "file:///home/admin/Pictures/Space-Plasma-4K.jpg")}';
