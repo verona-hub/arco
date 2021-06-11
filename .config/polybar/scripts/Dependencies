@@ -1,0 +1,8 @@
+
+Pulse audio control:
+yay -S pulseaudio-control
+
+Speedtest:
+python3
+speedtest-cli
+
