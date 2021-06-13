@@ -1,2 +1,2 @@
-# Arco-Linux
+# ArcoLinux
 backup dotfiles
