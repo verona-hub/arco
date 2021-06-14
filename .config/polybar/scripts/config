@@ -26,8 +26,10 @@ foreground = #ffffff
 foreground-alt = #ffffff
 primary = #ffb52a
 secondary = #e60053
-firefox = #E17F2E
 alert = #bd2c40
+
+firefox = #E17F2E
+light-green = #B4E99D
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -57,6 +59,17 @@ padding-right = 3
 ;Each module distance from another
 module-margin-left = 3
 module-margin-right = 3
+
+
+# ███    ███  ██████  ██████  ██    ██ ██      ███████ ███████
+# ████  ████ ██    ██ ██   ██ ██    ██ ██      ██      ██
+# ██ ████ ██ ██    ██ ██   ██ ██    ██ ██      █████   ███████
+# ██  ██  ██ ██    ██ ██   ██ ██    ██ ██      ██           ██
+# ██      ██  ██████  ██████   ██████  ███████ ███████ ███████
+
+modules-left = desktop window-list temperature browser menu
+modules-center = xwindow
+modules-right = speedtest speedtest-up pulseaudio wlan battery date powermenu
 
 
 # ███████  ██████  ███    ██ ████████ ███████
@@ -93,17 +106,6 @@ tray-padding = 4
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-
-# ███    ███  ██████  ██████  ██    ██ ██      ███████ ███████
-# ████  ████ ██    ██ ██   ██ ██    ██ ██      ██      ██
-# ██ ████ ██ ██    ██ ██   ██ ██    ██ ██      █████   ███████
-# ██  ██  ██ ██    ██ ██   ██ ██    ██ ██      ██           ██
-# ██      ██  ██████  ██████   ██████  ███████ ███████ ███████
-
-modules-left = filesystem memory cpu temperature window-list browser desktop
-modules-center = xwindow
-modules-right = speedtest speedtest-up pulseaudio wlan battery date powermenu
 
 
 #  █████  ██      ███████  █████
@@ -329,8 +331,9 @@ adapter = ADP1
 full-at = 98
 enable-ipc = true
 
-format-charging =  <label-charging>
-;format-charging-underline = #ffb52a
+format-charging = <label-charging>
+format-charging-prefix = " "
+format-charging-prefix-foreground = ${colors.firefox}
 
 format-discharging = <ramp-capacity> <label-discharging>
 ;format-discharging-underline = ${self.format-charging-underline}
@@ -390,8 +393,6 @@ animation-discharging-framerate = 750
 type = custom/text
 content = ︁
 content-padding = 1
-format-prefix = "︁ "
-format-prefix-foreground = ${colors.foreground-alt}
 content-foreground = ${colors.firefox}
 click-left = firefox &
 
@@ -455,7 +456,9 @@ label = %time% %date%
 
 [module/desktop]
 type = custom/text
-content = show desktop
+content = ︁
+content-padding = 2
+content-foreground = ${colors.light-green}
 click-left = "xdotool key super+d >/dev/null 2>&1 &"
 
 
@@ -524,6 +527,37 @@ label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
+
+
+# ███    ███ ███████ ███    ██ ██    ██
+# ████  ████ ██      ████   ██ ██    ██
+# ██ ████ ██ █████   ██ ██  ██ ██    ██
+# ██  ██  ██ ██      ██  ██ ██ ██    ██
+# ██      ██ ███████ ██   ████  ██████
+
+
+[module/menu]
+type = custom/menu
+expand-right = true
+
+label-open = Menu
+label-close = Close
+label-separator = |
+format-spacing = 1
+
+menu-0-0 = Internet
+menu-0-0-exec = #menu.open.1
+menu-0-1 = List Exec
+menu-0-1-exec = #menu.open.2
+
+menu-1-0 = Firefox
+menu-1-0-exec = firefox
+
+menu-2-0 = List Exec
+menu-2-0-exec = "/home/admin/.config/polybar/scripts/window-list.sh"
+menu-2-0-format = <label>
+menu-2-0-label = %output%
+interval = 1
 
 
 # ███    ███ ██████  ██████
@@ -597,10 +631,10 @@ menu-2-1-exec = menu-open-0
 type = internal/pulseaudio
 enable-ipc = true
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume>
 label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
-label-muted =  muted
+label-muted = ︁ muted
 label-muted-foreground = #666
 
 click-right = exec pavucontrol &
@@ -687,13 +721,13 @@ screenchange-reload = true
 type = custom/script  
 exec-if = hash speedtest
 exec = "/home/admin/.config/polybar/scripts/speedtest"
-interval = 2.0
+interval = 600
 
 [module/speedtest-up]  
 type = custom/script  
 exec-if = hash speedtest
 exec = "/home/admin/.config/polybar/scripts/speedtest" --upload
-interval = 90
+interval = 600
 
 
 #  ████████ ███████ ███    ███ ██████
@@ -721,7 +755,7 @@ format-warn-underline = #f50a4d
 ;format-warn-underline = ${self.format-underline}
 
 label =  %temperature-c%
-label-foreground = #b4e99d
+label-foreground = ${colors.light-green}
 label-warn =  %temperature-c%
 label-warn-foreground = ${colors.secondary}
 ;label-danger =  %temperature-c%
@@ -748,15 +782,10 @@ ramp-foreground = ${colors.foreground-alt}
 
 [module/window-list]
 type = custom/script
-;exec = window-list.sh
 exec = "/home/admin/.config/polybar/scripts/window-list.sh"
 format = <label>
 label = %output%
-label-padding = 1
 interval = 1
-
-
-
 
 
 # ██     ██ ██       █████  ███    ██
@@ -773,15 +802,14 @@ enable-ipc = true
 ;click-left = nm-connection-editor
 ;click-left = nm-applet --no-agent
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <label-connected>
 ;format-connected-underline = #9f78e1
 ;label-connected = %essid%
-label-connected = %{A1:nm-connection-editor:}%essid%%{A}
+label-connected = %{A1:nm-connection-editor:}︁ %essid%%{A}
 ;label-connected = %{A1:nm-applet --no-agent:}%essid%%{A}
 
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
+format-disconnected = <label-disconnected>
+label-disconnected = %{A1:nm-applet --no-agent:} Wlan disconnected%{A}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
@@ -801,5 +829,5 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/xwindow]
 type = internal/xwindow
-label = %{T7} %title:0:30:...%
+label = %{T7} %title:0:70:...%
 enable-ipc = true

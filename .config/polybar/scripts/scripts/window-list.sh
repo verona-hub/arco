@@ -31,7 +31,7 @@ current_display=$(wmctrl -d|grep "*"|awk '{print $1}')
 #########################
 # Decorated version BEGIN
 #
-color1="a2d1ec" # Blue
+color1="ff557f"
 
 active_window_decoration_style_left_side="%{F#$color1}%{+u}%{u#$color1}"
 active_window_decoration_style_right_side="%{-u}%{F-}"
@@ -48,7 +48,7 @@ current_windows=$(wmctrl -lx|awk -v current_display="$current_display" -v active
 
 			}
 
-		print "%{A1: wmctrl -ia "$1" & disown:}"window_title[1]"%{A}"
+		print "%{A1: wmctrl -ia "$1" & disown:} "window_title[1]" %{A}"
 
 		}
 
