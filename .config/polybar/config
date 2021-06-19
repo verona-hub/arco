@@ -25,6 +25,7 @@ background-alt = #44
 foreground = #ffffff
 foreground-alt = #ffffff
 primary = #ffb52a
+primary2 = #2ab9ff
 secondary = #e60053
 alert = #bd2c40
 
@@ -44,7 +45,7 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 ;This is the colored line height that goes under the text
-line-size = 4
+line-size = 2
 line-color = #f00
 
 ;Bar margin from top-right-bottom-left
@@ -67,9 +68,9 @@ module-margin-right = 3
 # ██  ██  ██ ██    ██ ██   ██ ██    ██ ██      ██           ██
 # ██      ██  ██████  ██████   ██████  ███████ ███████ ███████
 
-modules-left = desktop window-list temperature browser menu
+modules-left = desktop menu browser window-list  
 modules-center = xwindow
-modules-right = speedtest speedtest-up pulseaudio wlan battery date powermenu
+modules-right = speedtest speedtest-up pulseaudio wlan date powermenu
 
 
 # ███████  ██████  ███    ██ ████████ ███████
